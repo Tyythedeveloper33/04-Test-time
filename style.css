@@ -29,7 +29,7 @@ background-color: grey;
 width: 450px;
 height: 400px;
 margin-left: 30%;
-margin-top: 25px;
+margin-top: 5%;
   }
 
   /* start game stylying */
@@ -63,5 +63,15 @@ margin-top: 25px;
     width: 100px;
   }
   
-  
+  /*styling for footer*/
+  footer{
+    font-size: 20px;
+    background-color: gray;
+    padding: 50px;
+    margin-top:15%;
+    color: white;
+   text-align: center;
+   font-weight: bolder;
+   
+  }
  
