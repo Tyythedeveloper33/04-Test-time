@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+  /* above is general page styling*/
+  /* below is nav bar styling*/
+
+  a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 15px;
+    color: white;
+  }
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: right;
+    margin-right: 3%;
+    color: white;
+  }
+  nav{
+    background-color: grey;
+  }
+  /* below is styling for question-box*/
+  #question-box{
+background-color: grey;
+width: 450px;
+height: 400px;
+margin-left: 30%;
+margin-top: 25px;
+  }
+
+  /* start game stylying */
+  #question-box h1 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    color: white;
+    margin: 20px;
+    
+  }
+  #question-box h2 {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+  }
+  #question-box h3 {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+  }
+  #question-box #start-quiz {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    margin-left: 38.5%;
+    width: 100px;
+  }
+  
+  
+ 
