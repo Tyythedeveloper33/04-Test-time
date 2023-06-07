@@ -6,22 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lets quiz!</title>
   <link rel="stylesheet" type="text/css" href="./style.css" />
-  <script src= "script.js"></script>
 </head>
 <nav>
-<a>View highscores!</a>
-  <h1>Test-time: 00:00</h1>
-  </nav>
+    <a>View highscores!</a>
+    <h1>Test-time: <span id="time">00:00</span></h1>
+</nav>
 <body>
-  <div id="question-box">
-    <h1>You have a set timer for 2:30 to finish 5 multiple choice questions about coding. </h1>
-   <h2>Do you think your up for the challenge ??</h2>
-   <h3>If so hit Start</h3>
-    <button id="start-quiz">Start</button>
-  </div>
-  
+    <div id="question-box">
+        <h1>You have a set timer for 2:30 to finish 5 multiple choice questions about coding. </h1>
+        <h2>Do you think your up for the challenge ??</h2>
+        <h3>If so hit Start</h3>
+        <button id="startQuiz"class="btn">Start</button>
+    </div>
+
+    <!-- OPTION # 2 version setup -->
+    <div id="question-set" class="hidden">
+        <h1 id="question-title">TITLE</h1>
+        <div class="answer-container">
+            <button id="answer-1"></button>
+            <button id="answer-2"></button>
+            <button id="answer-3"></button>
+            <button id="answer-4"></button>
+        </div>
+    </div>
+    
+    <footer>
+        Github:Tyythedeveloper33 ||  Email:webstertyler81@yahoo.com
+    </footer>
+    <script src= "script.js"></script>
 </body>
-<footer>
-    Github:Tyythedeveloper33 ||  Email:webstertyler81@yahoo.com
-</footer>
 </html>
