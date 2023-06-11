@@ -74,4 +74,20 @@ margin-top: 5%;
    font-weight: bolder;
    
   }
+ /*styling for radio buttons (front-end_q)*/
+ p, label {
+  font: 1rem 'fira Sans', sans-serif;
+ }
+ input{
+  margin: 0.4rem;
+ }
+ /*styling for general question*/
+ fieldset {
+  font-size: 20px;
+  color: white;
+ justify-content: center;
+ }
+ div{
+  margin: 10px;
+ }
  
