@@ -91,3 +91,26 @@ margin-top: 5%;
   margin: 10px;
  }
  
+/* styuling for highscores*/
+#highscore-box{
+background-color: grey;
+width: 450px;
+height: 400px;
+margin-left: 30%;
+margin-top: 5%;
+  }
+  /*button styling*/
+
+  button {
+    font-size: 30px;
+   margin-left: 170px;
+   margin-top: 30px;
+  }
+ span{
+  font-size: 20px;
+  color: white;
+ }
+ p {
+  font-size: 20px;
+  color: white;
+ }
