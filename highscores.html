@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the High Scores Page</h1>
+    <p>Username:  <span id="username"></span></p>
+    <p>Score:  <span id="percent"></span>%</p>
+    
+
+    <script>
+        // First we need to make sure we GRAB any data in localStorage (by the "KEY")
+        var savedName = localStorage.getItem('prompt');
+        console.log("Saved Name: ", savedName);
+        var savedScore = localStorage.getItem('percent');
+        console.log("Saved Scores: ", savedScore);
+
+        // We can update/modify the DOM
+        var userElement = document.getElementById('username');
+        userElement.textContent = savedName;
+        var userScore = document.getElementById('percent');
+        userScore.textContent = savedScore;
+        
+        
+
+    </script>
+</body>
+</html>

@@ -353,24 +353,52 @@ nextBtn1.innerHTML = "<button id='next1' class='btn'>Next</button>";
         }
        function getPercent() {
         var score ;
-if(correctAnswerCount=== null) {
-    score = 0;
-}else{
-    score = correctAnswerCount * 20;
-}
+        if(correctAnswerCount=== null) {
+            score = 0;
+        }else{
+            score = correctAnswerCount * 20;
+        }
        console.log('score: ' + score + ' % ');
-       prompt('What is your nickname??')
+       var userInput = prompt('What is your nickname??')
        //
-       var inputField = document.getElementById('myInput');
+      // var inputField = document.getElementById('myInput');
+       console.log("User Entered: ", userInput);  // --> 
        // Set the id attribute
-       inputField.id = 'myInputId';
+       //inputField.id = 'myInputId';
        // Get the user input value
-       var userInput = inputField.value;
+       // var userInput = inputField.value;
        // Convert the user input to a string if necessary
-       var promptValue = String(userInput);
-       // Store the prompt value in local storage
-       localStorage.setItem('prompt', promptValue);
+       // var promptValue = String(userInput);
 
+       // Store the prompt value in local storage
+       localStorage.setItem('prompt', userInput);
+       localStorage.setItem('percent', score)
+
+       // creating a temp user obj
+       var tempUserScore = {
+        username: userInput,
+        userScore: score
+       }
+       // data conversion to STORE data in THE BROWSER
+       var jsonUser = JSON.stringify(tempUserScore)
+
+       console.log("Obj: ", tempUserScore)
+       console.log("Type: ", typeof tempUserScore)
+
+       console.log("JSON Obj: ", jsonUser)
+       console.log("Type: ", typeof jsonUser)
+
+       localStorage.setItem('userScore', jsonUser)
+      // localStorage.setItem('userScore', JSON.stringify(tempUserScore))
+
+      // IF we can save an object as a JSON STRING then we can also save ARRAYS --> [{ name: "timmy", score: 60}, {name: "sarah", score: 90}]
+
+       console.log(" hey " + userInput + " you have an score of " + score)
+       alert(" hey " + userInput + " you have an score of " + score + "!!!")
+
+ //      window.location.reload()  // --> Refresh
+    //   window.location.href = "http://www.github.com";
+      window.location.replace('highscores.html');
        }
         
 
@@ -378,7 +406,7 @@ if(correctAnswerCount=== null) {
         
 
 // Time Placeholder (global)
-var countdown = 150;
+var countdown = 75;
 
 
 function timer() {
@@ -393,6 +421,7 @@ function timer() {
         if(countdown === 0) {
             console.log("Timer Expired...");
             clearInterval(interval);
+            getPercent();
         }
 
     }, 1000)
