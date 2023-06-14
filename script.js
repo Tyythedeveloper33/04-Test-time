@@ -11,8 +11,7 @@ var answer4 =document.querySelector("#answer-4");
 var submitBtn =document.querySelector("#submit");
 // declare and initialize the global variable
 var correctAnswerCount = 0;
-
-
+// 
 
 
 // define the event listener function
@@ -361,6 +360,17 @@ if(correctAnswerCount=== null) {
 }
        console.log('score: ' + score + ' % ');
        prompt('What is your nickname??')
+       //
+       var inputField = document.getElementById('myInput');
+       // Set the id attribute
+       inputField.id = 'myInputId';
+       // Get the user input value
+       var userInput = inputField.value;
+       // Convert the user input to a string if necessary
+       var promptValue = String(userInput);
+       // Store the prompt value in local storage
+       localStorage.setItem('prompt', promptValue);
+
        }
         
 
